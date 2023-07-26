@@ -9,31 +9,53 @@ public class WordToLearn : MonoBehaviour
 {
     private Vector2 fingerDownPos;
 	private Vector2 fingerUpPos;
+    //public AgeSelect age;
+    private bool everyone;
+    //private AgeSelect age;
     //public Button everyoneBtn;
     //public Button youngPeopleBtn;
 
 	public bool detectSwipeAfterRelease = false;
-
+    public Words word;
 	public float SWIPE_THRESHOLD = 20f;
     public TextMeshProUGUI m_Object;
-    string[] words = {"I'm beat.", "a turn off"};
-    string[] definition = {"Estoy agotado.", "algo que no me apetece"};
+
+    int num;
     // Start is called before the first frame update
     void Start()
     {
-        m_Object.text = words[0];
+        //age = GetComponent<AgeSelect>();
+        num = 0;
+        everyone = (PlayerPrefs.GetInt("everyone",0) != 0);
+        if (everyone) {
+            num = Random.Range(0, word.everyoneWords.Length-1);
+            //Debug.Log(age.forEveryone);
+            m_Object.text = word.everyoneWords[num];
+        }
+        else {
+            //Debug.Log(age.forEveryone);
+            m_Object.text = word.youngWords[num];
+        }
     }
 
  
     public void Definition() 
     {
-        if (m_Object.text == words[0]) 
-        {
-            m_Object.text = definition[0];
+        //if (m_Object.text == everyoneWords[0]) 
+        if (everyone) {
+            if (m_Object.text == word.everyoneWords[num])
+                m_Object.text = word.everyoneDefinition[num];
+            else if (m_Object.text == word.everyoneDefinition[num]) 
+                m_Object.text = word.everyoneWords[num];
         }
-        else if (m_Object.text == definition[0]) {
-            m_Object.text = words[0];
+        else {
+            if (m_Object.text == word.youngWords[num])
+                m_Object.text = word.youngDefinition[num];
+            else if (m_Object.text == word.youngDefinition[num]) 
+                m_Object.text = word.youngWords[num];
         }
+    
+        
         
     }
 
