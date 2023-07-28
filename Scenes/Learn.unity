@@ -280,9 +280,15 @@ MonoBehaviour:
   everyoneWords:
   - I'm beat.
   - a turn off
+  - couch potato
+  - What's up?
+  - chill
   everyoneDefinition:
   - Estoy agotado.
   - algo que no me apetece
+  - "harag\xE1n, teleadicto"
+  - "\xBFQue pasa?"
+  - relajarse
   youngWords:
   - cringe
   youngDefinition:

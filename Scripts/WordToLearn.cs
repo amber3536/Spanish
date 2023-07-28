@@ -27,8 +27,10 @@ public class WordToLearn : MonoBehaviour
         //age = GetComponent<AgeSelect>();
         num = 0;
         everyone = (PlayerPrefs.GetInt("everyone",0) != 0);
+        Debug.Log("length " + word.everyoneWords.Length);
+
         if (everyone) {
-            num = Random.Range(0, word.everyoneWords.Length-1);
+            num = Random.Range(0, word.everyoneWords.Length);
             //Debug.Log(age.forEveryone);
             m_Object.text = word.everyoneWords[num];
         }
@@ -41,8 +43,10 @@ public class WordToLearn : MonoBehaviour
  
     public void Definition() 
     {
+        
         //if (m_Object.text == everyoneWords[0]) 
         if (everyone) {
+            Debug.Log(num);
             if (m_Object.text == word.everyoneWords[num])
                 m_Object.text = word.everyoneDefinition[num];
             else if (m_Object.text == word.everyoneDefinition[num]) 
@@ -108,6 +112,7 @@ public class WordToLearn : MonoBehaviour
 
 		} else {
 			Debug.Log ("No Swipe Detected!");
+            Definition();
 		}
 	}
 
@@ -134,7 +139,16 @@ public class WordToLearn : MonoBehaviour
 	void OnSwipeLeft ()
 	{
 		//Do something when swiped left
-        m_Object.text = "cat";
+        //m_Object.text = "cat";
+        if (everyone) {
+            num = Random.Range(0, word.everyoneWords.Length);
+            //Debug.Log(age.forEveryone);
+            m_Object.text = word.everyoneWords[num];
+        }
+        else {
+            //Debug.Log(age.forEveryone);
+            m_Object.text = word.youngWords[num];
+        }
 	}
 
 	void OnSwipeRight ()
