@@ -18,6 +18,7 @@ public class WordToLearn : MonoBehaviour
 	public bool detectSwipeAfterRelease = false;
     public Words word;
 	public float SWIPE_THRESHOLD = 20f;
+    public TextMeshProUGUI curr;
     public TextMeshProUGUI m_Object;
 
     int num;
@@ -32,11 +33,13 @@ public class WordToLearn : MonoBehaviour
         if (everyone) {
             num = Random.Range(0, word.everyoneWords.Length);
             //Debug.Log(age.forEveryone);
-            m_Object.text = word.everyoneWords[num];
+            curr.text = word.everyoneWords[num];
+            m_Object.text = "toque";
         }
         else {
             //Debug.Log(age.forEveryone);
-            m_Object.text = word.youngWords[num];
+            curr.text = word.youngWords[num];
+            m_Object.text = "toque";
         }
     }
 
@@ -46,17 +49,19 @@ public class WordToLearn : MonoBehaviour
         
         //if (m_Object.text == everyoneWords[0]) 
         if (everyone) {
-            Debug.Log(num);
-            if (m_Object.text == word.everyoneWords[num])
-                m_Object.text = word.everyoneDefinition[num];
-            else if (m_Object.text == word.everyoneDefinition[num]) 
-                m_Object.text = word.everyoneWords[num];
+            m_Object.text = word.everyoneDefinition[num];
+            // Debug.Log(num);
+            // if (m_Object.text == word.everyoneWords[num])
+            //     m_Object.text = word.everyoneDefinition[num];
+            // else if (m_Object.text == word.everyoneDefinition[num]) 
+            //     m_Object.text = word.everyoneWords[num];
         }
         else {
-            if (m_Object.text == word.youngWords[num])
-                m_Object.text = word.youngDefinition[num];
-            else if (m_Object.text == word.youngDefinition[num]) 
-                m_Object.text = word.youngWords[num];
+            m_Object.text = word.youngDefinition[num];
+            // if (m_Object.text == word.youngWords[num])
+            //     m_Object.text = word.youngDefinition[num];
+            // else if (m_Object.text == word.youngDefinition[num]) 
+            //     m_Object.text = word.youngWords[num];
         }
     
         
@@ -142,12 +147,17 @@ public class WordToLearn : MonoBehaviour
         //m_Object.text = "cat";
         if (everyone) {
             num = Random.Range(0, word.everyoneWords.Length);
+
+            curr.text = word.everyoneWords[num];
+            m_Object.text = "toque";
             //Debug.Log(age.forEveryone);
-            m_Object.text = word.everyoneWords[num];
+            //m_Object.text = word.everyoneWords[num];
         }
         else {
+            curr.text = word.youngWords[num];
+            m_Object.text = "toque";
             //Debug.Log(age.forEveryone);
-            m_Object.text = word.youngWords[num];
+            //m_Object.text = word.youngWords[num];
         }
 	}
 
