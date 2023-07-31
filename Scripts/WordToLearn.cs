@@ -79,12 +79,12 @@ public class WordToLearn : MonoBehaviour
 			}
 
 			//Detects Swipe while finger is still moving on screen
-			if (touch.phase == TouchPhase.Moved) {
-				if (!detectSwipeAfterRelease) {
-					fingerDownPos = touch.position;
-					DetectSwipe ();
-				}
-			}
+			// if (touch.phase == TouchPhase.Moved) {
+			// 	if (!detectSwipeAfterRelease) {
+			// 		fingerDownPos = touch.position;
+			// 		DetectSwipe ();
+			// 	}
+			// }
 
 			//Detects swipe after finger is released from screen
 			if (touch.phase == TouchPhase.Ended) {
@@ -146,6 +146,8 @@ public class WordToLearn : MonoBehaviour
 		//Do something when swiped left
         //m_Object.text = "cat";
         if (everyone) {
+            //num = (num + 1)%5;
+            //Debug.Log("num is "+ num);
             num = Random.Range(0, word.everyoneWords.Length);
 
             curr.text = word.everyoneWords[num];
@@ -163,6 +165,7 @@ public class WordToLearn : MonoBehaviour
 
 	void OnSwipeRight ()
 	{
+        Debug.Log("right");
 		//Do something when swiped right
 	}
 
