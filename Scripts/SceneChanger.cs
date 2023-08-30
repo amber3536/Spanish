@@ -15,4 +15,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
+    public void goHome()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }
