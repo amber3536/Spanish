@@ -15,12 +15,66 @@ public class Fill_in_Blanks : MonoBehaviour
     private bool everyone;
     public GameObject particles;
     private int sel;
+    //private ParticleSystem particleSys;
     // Start is called before the first frame update
     void Start()
     {
-        particles.SetActive(false);
+        //particles.SetActive(false);
         everyone = (PlayerPrefs.GetInt("everyone",0) != 0);
+        //particleSys = GetComponent<ParticleSystem>();
+        //particleSys.Stop(true);
+        changeWords();
 
+    }
+
+    public void btn1Clicked() {
+        if (ans1.text == word.everyoneWords[sel]) {
+            //particles.Play();
+            //particles.SetActive(true);
+            //StartCoroutine(Pause());
+            //particles.SetActive(false);
+            changeWords();
+        }
+        else {
+            ans1.color = Color.red;
+        }
+    }
+
+    public void btn2Clicked() {
+        if (ans2.text == word.everyoneWords[sel]) {
+            //particles.particleSystem.Play();
+            //particles.SetActive(true);
+            //StartCoroutine(Pause());
+            //particles.SetActive(false);
+            changeWords();
+        }
+        else {
+            ans2.color = Color.red;
+        }
+    }
+
+    public void btn3Clicked() {
+        if (ans3.text == word.everyoneWords[sel]) {
+            //particles.SetActive(true);
+            //StartCoroutine(Pause());
+            //particles.SetActive(false);
+            changeWords();
+        }
+        else {
+            ans3.color = Color.red;
+        }
+    }
+
+    IEnumerator Pause()
+    {
+        Debug.Log("hi");
+        //print(Time.time);
+        yield return new WaitForSeconds(2);
+        Debug.Log("bye");
+        //print(Time.time);
+    }
+
+    private void changeWords() {
         // just for everyone now
         if (everyone) {
             sel = Random.Range(0, p.paragraph.Length);
@@ -41,34 +95,6 @@ public class Fill_in_Blanks : MonoBehaviour
             ans1.text = word.youngWords[choices[0]];
             ans2.text = word.youngWords[choices[1]];
             ans3.text = word.youngWords[choices[2]];
-        }
-
-    }
-
-    public void btn1Clicked() {
-        if (ans1.text == word.everyoneWords[sel]) {
-            particles.SetActive(true);
-        }
-        else {
-            ans1.color = Color.red;
-        }
-    }
-
-    public void btn2Clicked() {
-        if (ans2.text == word.everyoneWords[sel]) {
-            particles.SetActive(true);
-        }
-        else {
-            ans2.color = Color.red;
-        }
-    }
-
-    public void btn3Clicked() {
-        if (ans3.text == word.everyoneWords[sel]) {
-            particles.SetActive(true);
-        }
-        else {
-            ans3.color = Color.red;
         }
     }
 }

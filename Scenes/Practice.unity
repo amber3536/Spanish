@@ -1043,7 +1043,7 @@ GameObject:
   - component: {fileID: 1420259307}
   - component: {fileID: 1420259306}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: ParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1136,7 +1136,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -6127,7 +6127,7 @@ GameObject:
   - component: {fileID: 1665348153}
   - component: {fileID: 1665348152}
   m_Layer: 5
-  m_Name: Paragraph
+  m_Name: MainParagraph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6443,6 +6443,11 @@ MonoBehaviour:
     I can cook today."
 
     "Sure. It''s been a long day for me too. _ _"'
+  - '"How did your date with John go last night?"
+
+    "Ok I guess. I liked him a
+    lot but honestly he chewed with his mouth open the whole dinner and it was _
+    _ _. I''m not sure if we''ll go out again."'
   paragraphY:
   - '"What is that music?"
 
