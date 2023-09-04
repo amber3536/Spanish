@@ -13,12 +13,13 @@ public class Fill_in_Blanks : MonoBehaviour
     public Paragraphs p;
     public Words word;
     private bool everyone;
-    public GameObject particles;
+    //public GameObject particles;
     private int sel;
-    //private ParticleSystem particleSys;
+    public ParticleSystem particleSys;
     // Start is called before the first frame update
     void Start()
     {
+        particleSys.Stop();
         //particles.SetActive(false);
         everyone = (PlayerPrefs.GetInt("everyone",0) != 0);
         //particleSys = GetComponent<ParticleSystem>();
@@ -29,9 +30,11 @@ public class Fill_in_Blanks : MonoBehaviour
 
     public void btn1Clicked() {
         if (ans1.text == word.everyoneWords[sel]) {
-            //particles.Play();
+            particleSys.Play();
+            clearColors();
             //particles.SetActive(true);
             //StartCoroutine(Pause());
+            //particleSys.Stop();
             //particles.SetActive(false);
             changeWords();
         }
@@ -42,9 +45,12 @@ public class Fill_in_Blanks : MonoBehaviour
 
     public void btn2Clicked() {
         if (ans2.text == word.everyoneWords[sel]) {
+            particleSys.Play();
+            clearColors();
             //particles.particleSystem.Play();
             //particles.SetActive(true);
             //StartCoroutine(Pause());
+            //particleSys.Stop();
             //particles.SetActive(false);
             changeWords();
         }
@@ -55,9 +61,8 @@ public class Fill_in_Blanks : MonoBehaviour
 
     public void btn3Clicked() {
         if (ans3.text == word.everyoneWords[sel]) {
-            //particles.SetActive(true);
-            //StartCoroutine(Pause());
-            //particles.SetActive(false);
+            particleSys.Play();
+            clearColors();
             changeWords();
         }
         else {
@@ -72,6 +77,12 @@ public class Fill_in_Blanks : MonoBehaviour
         yield return new WaitForSeconds(2);
         Debug.Log("bye");
         //print(Time.time);
+    }
+
+    private void clearColors() {
+        ans1.color = Color.black;
+        ans2.color = Color.black;
+        ans3.color = Color.black;
     }
 
     private void changeWords() {

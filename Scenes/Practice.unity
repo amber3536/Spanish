@@ -1030,7 +1030,7 @@ MonoBehaviour:
   ans3: {fileID: 1610454294}
   p: {fileID: 1905532968}
   word: {fileID: 1078049551}
-  particles: {fileID: 1420259305}
+  particleSys: {fileID: 1420259307}
 --- !u!1 &1420259305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,7 +1043,7 @@ GameObject:
   - component: {fileID: 1420259307}
   - component: {fileID: 1420259306}
   m_Layer: 0
-  m_Name: ParticleSystem
+  m_Name: ParticleSys
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1129,14 +1129,14 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420259305}
   serializedVersion: 8
-  lengthInSec: 2
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
