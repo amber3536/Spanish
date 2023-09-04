@@ -16,6 +16,8 @@ public class Fill_in_Blanks : MonoBehaviour
     //public GameObject particles;
     private int sel;
     public ParticleSystem particleSys;
+    public AudioSource correct;
+    public AudioSource incorrect;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class Fill_in_Blanks : MonoBehaviour
     public void btn1Clicked() {
         if (ans1.text == word.everyoneWords[sel]) {
             particleSys.Play();
+            correct.Play();
             clearColors();
             //particles.SetActive(true);
             //StartCoroutine(Pause());
@@ -39,6 +42,7 @@ public class Fill_in_Blanks : MonoBehaviour
             changeWords();
         }
         else {
+            incorrect.Play();
             ans1.color = Color.red;
         }
     }
@@ -46,15 +50,12 @@ public class Fill_in_Blanks : MonoBehaviour
     public void btn2Clicked() {
         if (ans2.text == word.everyoneWords[sel]) {
             particleSys.Play();
+            correct.Play();
             clearColors();
-            //particles.particleSystem.Play();
-            //particles.SetActive(true);
-            //StartCoroutine(Pause());
-            //particleSys.Stop();
-            //particles.SetActive(false);
             changeWords();
         }
         else {
+            incorrect.Play();
             ans2.color = Color.red;
         }
     }
@@ -62,10 +63,12 @@ public class Fill_in_Blanks : MonoBehaviour
     public void btn3Clicked() {
         if (ans3.text == word.everyoneWords[sel]) {
             particleSys.Play();
+            correct.Play();
             clearColors();
             changeWords();
         }
         else {
+            incorrect.Play();
             ans3.color = Color.red;
         }
     }
