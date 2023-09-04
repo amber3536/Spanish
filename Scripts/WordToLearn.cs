@@ -19,7 +19,8 @@ public class WordToLearn : MonoBehaviour
     public Words word;
 	public float SWIPE_THRESHOLD = 20f;
     public TextMeshProUGUI curr;
-    public TextMeshProUGUI m_Object;
+    public TextMeshProUGUI def;
+    public TextMeshProUGUI example;
 
     int num;
     // Start is called before the first frame update
@@ -30,42 +31,36 @@ public class WordToLearn : MonoBehaviour
         everyone = (PlayerPrefs.GetInt("everyone",0) != 0);
         Debug.Log("length " + word.everyoneWords.Length);
 
-        if (everyone) {
-            num = Random.Range(0, word.everyoneWords.Length);
-            //Debug.Log(age.forEveryone);
-            curr.text = word.everyoneWords[num];
-            m_Object.text = "toque";
-        }
-        else {
-            //Debug.Log(age.forEveryone);
-            curr.text = word.youngWords[num];
-            m_Object.text = "toque";
-        }
+        updateWord();
+        // if (everyone) {
+        //     num = Random.Range(0, word.everyoneWords.Length);
+        //     curr.text = word.everyoneWords[num];
+        //     def.text = "definición";
+        // }
+        // else {
+        //     curr.text = word.youngWords[num];
+        //     def.text = "definición";
+        // }
     }
 
  
     public void Definition() 
     {
-        
-        //if (m_Object.text == everyoneWords[0]) 
         if (everyone) {
-            m_Object.text = word.everyoneDefinition[num];
-            // Debug.Log(num);
-            // if (m_Object.text == word.everyoneWords[num])
-            //     m_Object.text = word.everyoneDefinition[num];
-            // else if (m_Object.text == word.everyoneDefinition[num]) 
-            //     m_Object.text = word.everyoneWords[num];
+            def.text = word.everyoneDefinition[num];
         }
         else {
-            m_Object.text = word.youngDefinition[num];
-            // if (m_Object.text == word.youngWords[num])
-            //     m_Object.text = word.youngDefinition[num];
-            // else if (m_Object.text == word.youngDefinition[num]) 
-            //     m_Object.text = word.youngWords[num];
+            def.text = word.youngDefinition[num];
+        }   
+    }
+
+    public void Example() {
+        if (everyone) {
+            example.text = word.everyoneExample[num];
         }
-    
-        
-        
+        else {
+            example.text = word.youngExample[num];
+        }
     }
 
 	// Update is called once per frame
@@ -143,24 +138,8 @@ public class WordToLearn : MonoBehaviour
 
 	void OnSwipeLeft ()
 	{
-		//Do something when swiped left
-        //m_Object.text = "cat";
-        if (everyone) {
-            //num = (num + 1)%5;
-            //Debug.Log("num is "+ num);
-            num = Random.Range(0, word.everyoneWords.Length);
+        updateWord();
 
-            curr.text = word.everyoneWords[num];
-            m_Object.text = "toque";
-            //Debug.Log(age.forEveryone);
-            //m_Object.text = word.everyoneWords[num];
-        }
-        else {
-            curr.text = word.youngWords[num];
-            m_Object.text = "toque";
-            //Debug.Log(age.forEveryone);
-            //m_Object.text = word.youngWords[num];
-        }
 	}
 
 	void OnSwipeRight ()
@@ -168,5 +147,20 @@ public class WordToLearn : MonoBehaviour
         Debug.Log("right");
 		//Do something when swiped right
 	}
+
+    private void updateWord() {
+        if (everyone) {
+            num = Random.Range(0, word.everyoneWords.Length);
+            curr.text = word.everyoneWords[num];
+            def.text = "definición";
+            example.text = "ejemplo";
+        }
+        else {
+            num = Random.Range(0, word.youngWords.Length);
+            curr.text = word.youngWords[num];
+            def.text = "definición";
+            example.text = "ejemplo";
+        }
+    }
 
 }

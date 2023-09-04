@@ -17,10 +17,22 @@ public class Words : MonoBehaviour
         "relajarse",
         "nadie está ahí"};
 
+    public string[] everyoneExample = {"I had such a long day. I'm beat.",
+        "Nail biting is a real turn off for me.",
+        "Have you been watching TV all day? You're such a couch potato.",
+        "Long time. What's up?",
+        "I just got home from work. I need to chill.",
+        "This club is dead. Let's go somewhere else."};
+
+
     public string[] youngWords = {"cringe",
         "simp",
         "lit"};
     public string[] youngDefinition = {"tener vergüenza ajena",
         "una persona que se esfuerza en exceso en impresionar a alguien que le gusta",
         "chingón"};
+    public string[] youngExample = {"You sleep with a teddy bear? Cringe.",
+        "Don't pick up food for her everytime she asks. She's going to think you're a simp.",
+        "This party is lit."};
+    
 }

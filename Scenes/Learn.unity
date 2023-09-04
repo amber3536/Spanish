@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 81357083}
   - component: {fileID: 81357082}
   m_Layer: 5
-  m_Name: Curr
+  m_Name: Word
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -361,16 +361,34 @@ MonoBehaviour:
   - couch potato
   - What's up?
   - chill
+  - dead (as in a bar or restaurant)
   everyoneDefinition:
   - Estoy agotado.
   - algo que no me apetece
   - "harag\xE1n, teleadicto"
   - "\xBFQue pasa?"
   - relajarse
+  - "nadie est\xE1 ah\xED"
+  everyoneExample:
+  - I had such a long day. I'm beat.
+  - Nail biting is a real turn off for me.
+  - Have you been watching TV all day? You're such a couch potato.
+  - Long time. What's up?
+  - I just got home from work. I need to chill.
+  - This club is dead. Let's go somewhere else.
   youngWords:
   - cringe
+  - simp
+  - lit
   youngDefinition:
   - "tener verg\xFCenza ajena"
+  - una persona que se esfuerza en exceso en impresionar a alguien que le gusta
+  - "ching\xF3n"
+  youngExample:
+  - You sleep with a teddy bear? Cringe.
+  - Don't pick up food for her everytime she asks. She's going to think you're a
+    simp.
+  - This party is lit.
 --- !u!1 &191153511
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +584,7 @@ GameObject:
   - component: {fileID: 258774348}
   - component: {fileID: 258774347}
   m_Layer: 5
-  m_Name: Curr
+  m_Name: Word
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -675,7 +693,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.8915024, y: 0, z: -2.2353516, w: 0}
+  m_margin: {x: -0.8915024, y: 0, z: 39.725525, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -743,7 +761,8 @@ MonoBehaviour:
   word: {fileID: 117990659}
   SWIPE_THRESHOLD: 20
   curr: {fileID: 258774347}
-  m_Object: {fileID: 863204177}
+  def: {fileID: 863204177}
+  example: {fileID: 941942233}
 --- !u!114 &344127287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -958,7 +977,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -4.2153015, y: 4.9367065, z: -6.6836243, w: -1.376358}
+  m_margin: {x: -4.2153015, y: 4.9367065, z: 0.7212219, w: -1.376358}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1058,7 +1077,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 344127286}
         m_TargetAssemblyTypeName: WordToLearn, Assembly-CSharp
-        m_MethodName: Definition
+        m_MethodName: Example
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1277,7 +1296,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -21.493408, y: 0, z: -21.493408, w: 13.433456}
+  m_margin: {x: 0.721344, y: 0, z: -4.2153015, w: 13.433456}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
