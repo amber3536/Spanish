@@ -266,8 +266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 147, y: 298}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: 152, y: 304}
+  m_SizeDelta: {x: 70, y: 68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258242385
 MonoBehaviour:
@@ -1223,6 +1223,13 @@ MonoBehaviour:
   - "\xBFQue pasa?"
   - relajarse
   - "nadie est\xE1 ah\xED"
+  everyoneExample:
+  - I had such a long day. I'm beat.
+  - Nail biting is a real turn off for me.
+  - Have you been watching TV all day? You're such a couch potato.
+  - Long time. What's up?
+  - I just got home from work. I need to chill.
+  - This club is dead. Let's go somewhere else.
   youngWords:
   - cringe
   - simp
@@ -1231,6 +1238,11 @@ MonoBehaviour:
   - "tener verg\xFCenza ajena"
   - una persona que se esfuerza en exceso en impresionar a alguien que le gusta
   - "ching\xF3n"
+  youngExample:
+  - You sleep with a teddy bear? Cringe.
+  - Don't pick up food for her everytime she asks. She's going to think you're a
+    simp.
+  - This party is lit.
 --- !u!1 &1259795342
 GameObject:
   m_ObjectHideFlags: 0

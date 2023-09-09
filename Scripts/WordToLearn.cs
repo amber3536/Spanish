@@ -21,6 +21,7 @@ public class WordToLearn : MonoBehaviour
     public TextMeshProUGUI curr;
     public TextMeshProUGUI def;
     public TextMeshProUGUI example;
+    public AudioSource audio;
 
     int num;
     // Start is called before the first frame update
@@ -61,6 +62,10 @@ public class WordToLearn : MonoBehaviour
         else {
             example.text = word.youngExample[num];
         }
+    }
+
+    public void PlayAudio() {
+        audio.Play();
     }
 
 	// Update is called once per frame
@@ -112,7 +117,7 @@ public class WordToLearn : MonoBehaviour
 
 		} else {
 			Debug.Log ("No Swipe Detected!");
-            Definition();
+            //Definition();
 		}
 	}
 
