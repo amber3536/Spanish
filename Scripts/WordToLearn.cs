@@ -21,7 +21,12 @@ public class WordToLearn : MonoBehaviour
     public TextMeshProUGUI curr;
     public TextMeshProUGUI def;
     public TextMeshProUGUI example;
-    public AudioSource audio;
+    public AudioSource E_0;
+    public AudioSource E_1;
+    public AudioSource E_2;
+    public AudioSource E_3;
+    public AudioSource E_4;
+    public AudioSource E_5;
 
     int num;
     // Start is called before the first frame update
@@ -65,7 +70,31 @@ public class WordToLearn : MonoBehaviour
     }
 
     public void PlayAudio() {
-        audio.Play();
+        switch(num)
+        {
+            case 0: 
+                E_0.Play();
+                break;
+            case 1:
+                E_1.Play();
+                break;
+            case 2:
+                E_2.Play();
+                break;
+            case 3:
+                E_3.Play();
+                break;
+            case 4:
+                E_4.Play();
+                break;
+            case 5:
+                E_5.Play();
+                break;
+            default:
+                E_0.Play();
+                break;
+        }
+        
     }
 
 	// Update is called once per frame
