@@ -22,6 +22,7 @@ public class WordToLearn : MonoBehaviour
     public TextMeshProUGUI def;
     public TextMeshProUGUI example;
     public AudioSource E_0;
+    
     public AudioSource E_1;
     public AudioSource E_2;
     public AudioSource E_3;
