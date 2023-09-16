@@ -45,5 +45,6 @@ public class AgeSelect : MonoBehaviour
     public void selectvalue(TMP_Dropdown dropDown)
     {
         Debug.Log("DROP DOWN CHANGED -> " + dropDown.value);
+        PlayerPrefs.SetInt("country", dropDown.value);
     }
 }

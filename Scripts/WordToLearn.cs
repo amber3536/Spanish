@@ -11,9 +11,7 @@ public class WordToLearn : MonoBehaviour
 	private Vector2 fingerUpPos;
     //public AgeSelect age;
     private bool everyone;
-    //private AgeSelect age;
-    //public Button everyoneBtn;
-    //public Button youngPeopleBtn;
+    private int country;
 
 	public bool detectSwipeAfterRelease = false;
     public Words word;
@@ -132,6 +130,8 @@ public class WordToLearn : MonoBehaviour
         num = 0;
         everyone = (PlayerPrefs.GetInt("everyone",0) != 0);
         Debug.Log("length " + word.everyoneWords.Length);
+        country = PlayerPrefs.GetInt("country", 0);
+        Debug.Log("country " + country);
 
         updateWord();
         // if (everyone) {
