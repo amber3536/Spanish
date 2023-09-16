@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class AgeSelect : MonoBehaviour
 {
+    //Dropdown m_Dropdown;
     public bool forEveryone;
     //public bool forYoungPeople;
     //public Button btnEveryone;
     //public Button btnYoungPeople;
     void Start() {
         forEveryone = true;
+
+        // m_Dropdown = GetComponent<Dropdown>();
+        // m_Dropdown.onValueChanged.AddListener(delegate
+        // {
+        //     selectvalue(m_Dropdown);
+        // });
         //forYoungPeople = false;
     }
 
@@ -29,8 +37,13 @@ public class AgeSelect : MonoBehaviour
         PlayerPrefs.SetInt("everyone",0);
         Debug.Log("young" + forEveryone);
     }
-    public void OnSelect (BaseEventData eventData) 
-	{
-		Debug.Log (this.gameObject.name + " was selected");
-	}
+    // public void OnSelect (BaseEventData eventData) 
+	// {
+	// 	Debug.Log (this.gameObject.name + " was selected");
+	// }
+
+    public void selectvalue(TMP_Dropdown dropDown)
+    {
+        Debug.Log("DROP DOWN CHANGED -> " + dropDown.value);
+    }
 }
