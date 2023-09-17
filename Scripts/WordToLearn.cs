@@ -12,6 +12,8 @@ public class WordToLearn : MonoBehaviour
     //public AgeSelect age;
     private bool everyone;
     private int country;
+    public TMP_FontAsset fontEng;
+    public TMP_FontAsset fontMan;
 
 	public bool detectSwipeAfterRelease = false;
     public Words word;
@@ -598,6 +600,7 @@ public class WordToLearn : MonoBehaviour
             switch(country) 
             {
                 case 0:
+                    def.font = fontEng;
                     def.text = "definition";
                     example.text = "example";
                     break;
