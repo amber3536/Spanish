@@ -148,9 +148,24 @@ public class WordToLearn : MonoBehaviour
  
     public void Definition() 
     {
-        // if (everyone) {
-        //     def.text = word.everyoneDefinition[num];
-        // }
+        if (everyone) {
+            switch(country) 
+            {
+                case 0:
+                    def.text = word.everyoneDefEnglish[num];
+                    break;
+                case 1:
+                    def.text = word.everyoneDefSpanish[num];
+                    break;
+                case 2:
+                    def.text = word.everyoneDefMandarin[num];
+                    break;
+                case 3:
+                    def.text = word.everyoneDefHindi[num];
+                    break;
+            }
+            
+        }
         // else {
         //     def.text = word.youngDefinition[num];
         // }   
@@ -579,8 +594,27 @@ public class WordToLearn : MonoBehaviour
         if (everyone) {
             num = Random.Range(0, word.everyoneWords.Length);
             curr.text = word.everyoneWords[num];
-            def.text = "definición";
-            example.text = "ejemplo";
+
+            switch(country) 
+            {
+                case 0:
+                    def.text = "definition";
+                    example.text = "example";
+                    break;
+                case 1:
+                    def.text = "definición";
+                    example.text = "ejemplo";
+                    break;
+                case 2:
+                    def.text = "定义";
+                    example.text = "例子";
+                    break;
+                case 3:
+                    def.text = "परिभाषा";
+                    example.text = "उदाहरण";
+                    break;
+            }
+            
         }
         else {
             num = Random.Range(0, word.youngWords.Length);

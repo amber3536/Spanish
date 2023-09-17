@@ -14,6 +14,7 @@ public class AgeSelect : MonoBehaviour
     //public Button btnYoungPeople;
     void Start() {
         forEveryone = true;
+        PlayerPrefs.SetInt("country", 0);
 
         // m_Dropdown = GetComponent<Dropdown>();
         // m_Dropdown.onValueChanged.AddListener(delegate
