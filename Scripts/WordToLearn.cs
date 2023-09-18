@@ -166,8 +166,24 @@ public class WordToLearn : MonoBehaviour
                 case 3:
                     def.text = word.everyoneDefHindi[num];
                     break;
+            }    
+        }
+        else {
+            switch(country) 
+            {
+                case 0:
+                    def.text = word.youngDefEnglish[num];
+                    break;
+                case 1:
+                    def.text = word.youngDefSpanish[num];
+                    break;
+                case 2:
+                    def.text = word.youngDefMandarin[num];
+                    break;
+                case 3:
+                    def.text = word.youngDefHindi[num];
+                    break;
             }
-            
         }
         // else {
         //     def.text = word.youngDefinition[num];
@@ -184,8 +200,9 @@ public class WordToLearn : MonoBehaviour
     }
 
     public void PlayAudio() {
-        switch(num)
-        {
+        if (everyone) {
+            switch(num)
+            {
             case 0:
                 E_0.Play();
                 break;
@@ -504,6 +521,7 @@ public class WordToLearn : MonoBehaviour
             // default:
             //     E_0.Play();
             //     break;
+            }
         }
         
     }
@@ -594,11 +612,17 @@ public class WordToLearn : MonoBehaviour
 	}
 
     private void updateWord() {
+
         if (everyone) {
             num = Random.Range(0, word.everyoneWords.Length);
             curr.text = word.everyoneWords[num];
+        }
+        else {
+            num = Random.Range(0, word.youngWords.Length);
+            curr.text = word.youngWords[num];
+        }
 
-            switch(country) 
+        switch(country) 
             {
                 case 0:
                     def.font = fontEng;
@@ -625,14 +649,6 @@ public class WordToLearn : MonoBehaviour
                     example.text = "उदाहरण";
                     break;
             }
-            
-        }
-        else {
-            num = Random.Range(0, word.youngWords.Length);
-            curr.text = word.youngWords[num];
-            def.text = "definición";
-            example.text = "ejemplo";
-        }
     }
 
 }
