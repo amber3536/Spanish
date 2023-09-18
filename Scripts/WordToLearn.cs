@@ -14,6 +14,7 @@ public class WordToLearn : MonoBehaviour
     private int country;
     public TMP_FontAsset fontEng;
     public TMP_FontAsset fontMan;
+    public TMP_FontAsset fontHind;
 
 	public bool detectSwipeAfterRelease = false;
     public Words word;
@@ -602,18 +603,25 @@ public class WordToLearn : MonoBehaviour
                 case 0:
                     def.font = fontEng;
                     def.text = "definition";
+                    example.font = fontEng;
                     example.text = "example";
                     break;
                 case 1:
+                    def.font = fontEng;
                     def.text = "definición";
+                    example.font = fontEng;
                     example.text = "ejemplo";
                     break;
                 case 2:
+                    def.font = fontMan;
                     def.text = "定义";
+                    example.font = fontMan;
                     example.text = "例子";
                     break;
                 case 3:
+                    def.font = fontHind;
                     def.text = "परिभाषा";
+                    example.font = fontHind;
                     example.text = "उदाहरण";
                     break;
             }
