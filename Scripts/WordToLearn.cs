@@ -125,6 +125,45 @@ public class WordToLearn : MonoBehaviour
     public AudioSource E_103;
     public AudioSource E_104;
 
+    public AudioSource Y_0;
+    public AudioSource Y_1;
+    public AudioSource Y_2_3;
+    public AudioSource Y_4;
+    public AudioSource Y_5;
+    public AudioSource Y_6;
+    public AudioSource Y_7;
+    public AudioSource Y_8;
+    public AudioSource Y_9;
+    public AudioSource Y_10;
+    public AudioSource Y_11;
+    public AudioSource Y_12;
+    public AudioSource Y_13;
+    public AudioSource Y_14;
+    public AudioSource Y_15;
+    public AudioSource Y_16;
+    public AudioSource Y_17;
+    public AudioSource Y_18;
+    public AudioSource Y_19;
+    public AudioSource Y_20;
+    public AudioSource Y_21;
+    public AudioSource Y_22;
+    public AudioSource Y_23;
+    public AudioSource Y_24;
+    public AudioSource Y_25;
+    public AudioSource Y_26;
+    public AudioSource Y_27;
+    public AudioSource Y_28;
+    public AudioSource Y_29;
+    public AudioSource Y_30;
+    public AudioSource Y_31;
+    public AudioSource Y_32;
+    public AudioSource Y_33;
+    public AudioSource Y_34;
+    public AudioSource Y_35;
+    public AudioSource Y_36;
+    public AudioSource Y_37;
+    public AudioSource Y_38;
+
     int num;
     // Start is called before the first frame update
     void Start()
@@ -521,6 +560,128 @@ public class WordToLearn : MonoBehaviour
             // default:
             //     E_0.Play();
             //     break;
+            }
+        }
+        else {
+            switch(num) 
+            {
+            case 0:
+                Y_0.Play();
+                break;
+            case 1:
+                Y_1.Play();
+                break;
+            case 2:
+                Y_2_3.Play();
+                break;
+            case 3:
+                Y_2_3.Play();
+                break;
+            case 4:
+                Y_4.Play();
+                break;
+            case 5:
+                Y_5.Play();
+                break;
+            case 6:
+                Y_6.Play();
+                break;
+            case 7:
+                Y_7.Play();
+                break;
+            case 8:
+                Y_8.Play();
+                break;
+            case 9:
+                Y_9.Play();
+                break;
+            case 10:
+                Y_10.Play();
+                break;
+            case 11:
+                Y_11.Play();
+                break;
+            case 12:
+                Y_12.Play();
+                break;
+            case 13:
+                Y_13.Play();
+                break;
+            case 14:
+                Y_14.Play();
+                break;
+            case 15:
+                Y_15.Play();
+                break;
+            case 16:
+                Y_16.Play();
+                break;
+            case 17:
+                Y_17.Play();
+                break;
+            case 18:
+                Y_18.Play();
+                break;
+            case 19:
+                Y_19.Play();
+                break;
+            case 20:
+                Y_20.Play();
+                break;
+            case 21:
+                Y_21.Play();
+                break;
+            case 22:
+                Y_22.Play();
+                break;
+            case 23:
+                Y_23.Play();
+                break;
+            case 24:
+                Y_24.Play();
+                break;
+            case 25:
+                Y_25.Play();
+                break;
+            case 26:
+                Y_26.Play();
+                break;
+            case 27:
+                Y_27.Play();
+                break;
+            case 28:
+                Y_28.Play();
+                break;
+            case 29:
+                Y_29.Play();
+                break;
+            case 30:
+                Y_30.Play();
+                break;
+            case 31:
+                Y_31.Play();
+                break;
+            case 32:
+                Y_32.Play();
+                break;
+            case 33:
+                Y_33.Play();
+                break;
+            case 34:
+                Y_34.Play();
+                break;
+            case 35:
+                Y_35.Play();
+                break;
+            case 36:
+                Y_36.Play();
+                break;
+            case 37:
+                Y_37.Play();
+                break;
+            case 38:
+                Y_38.Play();
+                break;
             }
         }
         
