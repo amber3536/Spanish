@@ -42,6 +42,16 @@ public class Fill_in_Blanks : MonoBehaviour
             //particles.SetActive(false);
             changeWords();
         }
+        else if (ans1.text == word.youngWords[sel]) {
+            particleSys.Play();
+            correct.Play();
+            clearColors();
+            //particles.SetActive(true);
+            //StartCoroutine(Pause());
+            //particleSys.Stop();
+            //particles.SetActive(false);
+            changeWords();
+        }
         else {
             incorrect.Play();
             ans1.color = Color.red;
@@ -55,6 +65,16 @@ public class Fill_in_Blanks : MonoBehaviour
             clearColors();
             changeWords();
         }
+        else if (ans2.text == word.youngWords[sel]) {
+            particleSys.Play();
+            correct.Play();
+            clearColors();
+            //particles.SetActive(true);
+            //StartCoroutine(Pause());
+            //particleSys.Stop();
+            //particles.SetActive(false);
+            changeWords();
+        }
         else {
             incorrect.Play();
             ans2.color = Color.red;
@@ -66,6 +86,16 @@ public class Fill_in_Blanks : MonoBehaviour
             particleSys.Play();
             correct.Play();
             clearColors();
+            changeWords();
+        }
+        else if (ans3.text == word.youngWords[sel]) {
+            particleSys.Play();
+            correct.Play();
+            clearColors();
+            //particles.SetActive(true);
+            //StartCoroutine(Pause());
+            //particleSys.Stop();
+            //particles.SetActive(false);
             changeWords();
         }
         else {
@@ -89,11 +119,11 @@ public class Fill_in_Blanks : MonoBehaviour
         ans3.color = Color.black;
     }
 
-    private int getNewChoice(int[] sel) {
+    private int getNewChoice(int[] sel, int len) {
         int c = sel[0]; // 
 
         while (sel.Contains(c)) {
-            c = Random.Range(0, p.paragraph.Length);
+            c = Random.Range(0, len);
         }
         return c;
     }
@@ -106,8 +136,8 @@ public class Fill_in_Blanks : MonoBehaviour
 
              int[] choices = new int[3];
              choices[0] = sel;
-             choices[1] = getNewChoice(choices);
-             choices[2] = getNewChoice(choices);
+             choices[1] = getNewChoice(choices, p.paragraph.Length);
+             choices[2] = getNewChoice(choices, p.paragraph.Length);
 
             //Random random = new Random();
             //Enumerable.Range(0, 2).OrderBy(c => random.Next()).ToArray();
@@ -140,14 +170,36 @@ public class Fill_in_Blanks : MonoBehaviour
             // ans3.text = word.everyoneWords[choices[2]];
         }
         else {
-            int sel = Random.Range(0, p.paragraphY.Length);
+            sel = Random.Range(0, p.paragraphY.Length);
             para.text = p.paragraphY[sel];
-            int[] choices = p.answersY[sel];
+            Debug.Log("choice " + sel + word.youngWords[sel]);
+            
+            int[] choices = new int[3];
+            choices[0] = sel;
+            choices[1] = getNewChoice(choices, p.paragraphY.Length);
+            choices[2] = getNewChoice(choices, p.paragraphY.Length);
 
-            // random numbers, one is the right answer
-            ans1.text = word.youngWords[choices[0]];
-            ans2.text = word.youngWords[choices[1]];
-            ans3.text = word.youngWords[choices[2]];
+            //Random random = new Random();
+            //Enumerable.Range(0, 2).OrderBy(c => random.Next()).ToArray();
+            //choices = choices.OrderBy(x => random.Next()).ToArray();
+            int curr1 = Random.Range(0, 3);
+            ans1.text = word.youngWords[choices[curr1]];
+
+            int curr2 = curr1;
+            while (curr2 == curr1) {
+                curr2 = Random.Range(0, 3);
+            }
+
+            //int curr1 = (curr == 0) ? 1 : 0;
+            ans2.text = word.youngWords[choices[curr2]];
+
+            int curr3 = curr2;
+            while (curr3 == curr1 || curr3 == curr2) {
+                curr3 = Random.Range(0, 3);
+            }
+
+            
+            ans3.text = word.youngWords[choices[curr3]];
         }
     }
 }
