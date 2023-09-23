@@ -230,12 +230,12 @@ public class WordToLearn : MonoBehaviour
     }
 
     public void Example() {
-        // if (everyone) {
-        //     example.text = word.everyoneExample[num];
-        // }
-        // else {
-        //     example.text = word.youngExample[num];
-        // }
+        if (everyone) {
+            example.text = word.everyoneExample[num];
+        }
+        else {
+            example.text = word.youngExample[num];
+        }
     }
 
     public void PlayAudio() {
