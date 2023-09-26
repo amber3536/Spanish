@@ -42,7 +42,7 @@ public class Fill_in_Blanks : MonoBehaviour
             //particles.SetActive(false);
             changeWords();
         }
-        else if (ans1.text == word.youngWords[sel]) {
+        else if (everyone == false && ans1.text == word.youngWords[sel]) {
             particleSys.Play();
             correct.Play();
             clearColors();
@@ -65,7 +65,7 @@ public class Fill_in_Blanks : MonoBehaviour
             clearColors();
             changeWords();
         }
-        else if (ans2.text == word.youngWords[sel]) {
+        else if (everyone == false && ans2.text == word.youngWords[sel]) {
             particleSys.Play();
             correct.Play();
             clearColors();
@@ -88,7 +88,7 @@ public class Fill_in_Blanks : MonoBehaviour
             clearColors();
             changeWords();
         }
-        else if (ans3.text == word.youngWords[sel]) {
+        else if (everyone == false && ans3.text == word.youngWords[sel]) {
             particleSys.Play();
             correct.Play();
             clearColors();

@@ -171,12 +171,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -730,7 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.52910286, g: 0.7735849, b: 0.70014757, a: 0.392}
+  m_Color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1775,12 +1775,158 @@ MonoBehaviour:
   - "\u51B7\u9759\u4E0B\u6765"
   - "\u5931\u8BEF"
   everyoneExample:
-  - I had such a long day. I'm beat.
-  - Nail biting is a real turn off for me.
-  - Have you been watching TV all day? You're such a couch potato.
-  - Long time. What's up?
-  - I just got home from work. I need to chill.
-  - This club is dead. Let's go somewhere else.
+  - '"I had such a long day. I''m beat."'
+  - '"Nail biting is a real turn off for me."'
+  - '"Have you been watching TV all day? You''re such a couch potato."'
+  - '"Long time. What''s up?"'
+  - '"I just got home from work. I need to chill."'
+  - '"This club is dead. Let''s go somewhere else."'
+  - '"That guy is so woke, every weekend he''s at another rally."'
+  - '"Girl you slayed at that interview. No way you''re not getting the job."'
+  - '"That restaurant is sick. They make the best ramen ever."'
+  - '"I need to hit the books. I have a big exam tomorrow."'
+  - '"Do you want to go to the grocery store?"  "I''m game."'
+  - '"I hate this restaurant." "What did you say?" "Nevermind"'
+  - '"This album is rad. You should listen to it."'
+  - '"Don''t worry about this interview. You''ve got it in the bag."'
+  - '"It''s once in a blue moon that you love someone this much. Enjoy it."'
+  - '"Do you want to drive?" "You bet."'
+  - '"You haven''t been drinking? I don''t buy that."'
+  - '"I will miss you so much. Please keep in touch."'
+  - '"She was talking to Brad while Stephanie stood right there? I can''t even."'
+  - '"Is there any way you can you get me some fries too?" "No biggie."'
+  - '"Is there any way you can you get me some fries too?" "Sure. No big deal."'
+  - '"Can you help me with my Physics homework?" "No sweat."'
+  - '"Wow you really showed up Felipe at pool. He barely scored a single point."'
+  - '"You really showed up for Marge when she got her cancer diagnosis. You are the
+    best friend"'
+  - '"I have a big crush on Eduardo. I can barely look at him in the eyes."'
+  - '"The Wolf of Wall Street seems like a pretty accurate depiction of wihte-collar
+    crime."'
+  - '"The unions represent blue-collar workers like farm workers and truck drivers."'
+  - '"My girlfriend gets salty when she''s on her period. She gets mad at me for
+    going out with friends"'
+  - '"Our wedding was pretty low-key. We only invited close friends and family."'
+  - '"It''s a bomb restaurant. You have to try their dumplings."'
+  - '"That car dealership is pretty shady. I would go somewhere else."'
+  - '"I liked the movie but the jokes were pretty corny."'
+  - '"You''re going to be out of town on the 10th? Bummer."'
+  - '"Can we get nachos? I''ve been jonesing for that fake cheese."'
+  - '"Hey I got you a ticket for the movie."
+
+    "Sweet"'
+  - '"I never put out on the first date until I met you."'
+  - '"I feel really put out that you asked me to drive everyone."'
+  - '"Hey let''s hang out this weekend! It''s been forever."'
+  - '"I was scared to death. I coudn''t find you anywhere."'
+  - '"I get that you make a lot of money now but you don''t have to rub it in my
+    face."'
+  - '"I would love to have another child but that ship has sailed."'
+  - '"Have a blast on your vacation!"'
+  - '"Do you want to try riding ATVs with me?"
+
+    "I''m down."'
+  - '"Hey do you want to go to the movies?"
+
+    "No. I''m really down about everything
+    at work. Maybe another time."'
+  - '"I can''t go back to that barbershop. They ripped me off so bad last time. I
+    think I paid double price"'
+  - '"Let me drive. You ride shotgun."'
+  - '"She always sucks up to her professors. That''s how she gets good grades."'
+  - '"I have dibs on the chocolate ice cream. You can eat the vanilla."'
+  - '"Ah the freshmen have arrived. Fresh meat."'
+  - '"I want to pass the buck so you can play your song but I''m having so much fun
+    playing this ukelele."'
+  - '"Can we go dutch for dinner? It seems fair." '
+  - '"Let''s hit the road. If we''re going to get there by dark we need to head out
+    now."'
+  - '"I just need to wrap up a few things at work and I''ll be home."'
+  - '"Wait. You said Abigail is at the house. Are you kidding me?"'
+  - '"Wait. You already cleaned your room? Are you kidding me?!"'
+  - '"It turns out I can''t make the lunch today. Can I take a rain check?"'
+  - '"Are you even listening?"
+
+    "As soon as you started talking about lunch I
+    was all ears."'
+  - '"Have you finished your essay yet."
+
+    "Nope. I''m just going to drink coffee
+    and pull an all-nighter. I''ll get it done."'
+  - '"Look at his photo. That boy had a real glow up. I''ve never seen him look so
+    good."'
+  - '"I brought earbuds on the plane so I could tune out everything but my audiobook."'
+  - '"How did you do on the exam?"
+
+    "Who, me? Aced it."'
+  - '"Wow this cake is really delicious. What is the recipe? You nailed it."'
+  - '"I''m not going to let another mechanic screw me over. I can take my car somewhere
+    else."'
+  - '"I am so sorry I screwed up the car. I was trying to figure out how to adjust
+    the A/C but I think I pushed too many buttons."'
+  - '"I''m really amped up for the concert tonight. I may have drunk too much coffee."'
+  - '"How did your date go? Spill the beans."'
+  - '"Wait you only have $10 in your account?"
+
+    "Dead-ass."'
+  - '"I know we don''t always agree but I''m tired of having a beef with you all
+    the time."'
+  - '"I need to go to the mall to pick up some shoes at 11. Are you down to join?"'
+  - '"I need to go to the mall to pick up some shoes at 11. Are you up to coming
+    along?"'
+  - '"I''m fixin'' to head out now if you want to come."'
+  - '"Samantha had a hissy fit in the store when I said I wouldn''t buy her ice cream."'
+  - '"I don''t have enough dough for Taylor Swift tickets. You can go without me."'
+  - '"I don''t have enough bread for Taylor Swift tickets. You can go without me."'
+  - '"I barely slept all night. If we put on a movie, I think I''ll crash."'
+  - '"Lighten up. The final is only worth 10% of your grade in the class."'
+  - '"I scored 2 tickets to the game if you want to come!"'
+  - '"I have to cram for my biology exam. I am so behind in this class."'
+  - '"I love you but I have to bail. I told Teresa I would meet her for coffee."'
+  - '"Please don''t ditch me at the party. I don''t know anyone."'
+  - '"My phone is completely busted. I really need to get a new one."'
+  - '"I busted Michael trying to leave early. Why does he hate parties so much?"'
+  - '"I''m sorry I''m running late but I''ll be there in no time."'
+  - '"I heard they are giving freebie frozen yogurts coupons to the first 50 shoppers."'
+  - '"You stepped on my foot."
+
+    "Sorry. My bad."'
+  - '"We''re going to be late to the movie."
+
+    "No worries. The first 20 minutes
+    are trailers anyway."'
+  - '"I feel like I''m never good enough"
+
+    "I get it. It''s hard to go to college
+    and get a degree."'
+  - '"I''m struggling so much to understand the professor."
+
+    "Same here. This
+    is a hard class."'
+  - '"The A/C is on way too high in this office. I''m freezing."
+
+    "I feel you."'
+  - '"Wow that was epic. I love going sailing now."'
+  - '"You look so hot in that dress."'
+  - '"I don''t like romantic comedies. They''re too cheesy for me."'
+  - '"You were supposed to be here an hour ago. You''re so flaky."'
+  - '"I think John is having an affair."
+
+    "You need to dump him."'
+  - '"I need to break up with Natasha. I just don''t feel like she supports me."'
+  - '"I used to be a party animal, but now I go to bed at 11 pm without fail."'
+  - '"David is a whiz with a electronics. Maybe he can fix it."'
+  - '"I would try the zip line, but honestly I''m a chicken."'
+  - '"I met this chick yesterday who said she gives $40 massages."'
+  - '"Do you want to go rollarskating with me?"
+
+    "I''m in."'
+  - '"I''m going the beach this weekend. You should come. It will be a blast."'
+  - '"I''m starving. I''m gonna pig out so bad when we get to the restaurant."'
+  - '"Drinking at Starbucks is a little bougie for me. I prefer to make my own coffee"'
+  - '"I need you to cool it. Fighting with him won''t help anything."'
+  - '"I don''t want to drop the ball on this assignment, but I''m running out of
+    time. I need your help."'
   youngWords:
   - cringe
   - simp
@@ -1993,10 +2139,55 @@ MonoBehaviour:
   - "\u7B28\u86CB"
   - "\u611A\u8822"
   youngExample:
-  - You sleep with a teddy bear? Cringe.
-  - Don't pick up food for her everytime she asks. She's going to think you're a
-    simp.
-  - This party is lit.
+  - '"You sleep with a teddy bear? Cringe."'
+  - '"Don''t pick up food for her everytime she asks. She''s going to think you''re
+    a simp."'
+  - '"This party is lit."'
+  - '"I''m going to get lit at this party."'
+  - '"Have you been working out? You look swole, bro."'
+  - '"Nike shoes and a Nike jacket? I like your drip."'
+  - '"I''m finna go to the mall."'
+  - '"Do you want to drive?" "Bet."'
+  - '"Your shoes are dope. Did you get them in L.A.?"'
+  - '"I''m low key obsessed with Nicki Minaj."'
+  - '"My sister is so gucci. She said she will pay for everyone."'
+  - '"I''m a little shook you just said you are going to leave."'
+  - '"That guy looks sus. Can we go somewhere else?"'
+  - '"Check out this whip. It''s only $60K."'
+  - '"That dress is on fleek. He''s going to love it."'
+  - '"We had a couple of dates. We were texting everyday. Then she ghosted me. I
+    don''t know what went wrong"'
+  - '"You want to come with me to the DMV? Yas!"'
+  - '"I love to eat wheatgrass. No cap. I think it tastes good."'
+  - '"Wearing sandals is really on point. I didn''t know it would be this hot today."'
+  - '"That restaurant is mad cheap."'
+  - '"Wow you did stupid good on that exam. I should study with you next time."'
+  - '"That taco shop is ok but their salsa slaps."'
+  - '"Have you tried the dumplings? They''re bussin"'
+  - '"He has tats all over his arms. One looks like a snake wrapping around him."'
+  - '"The food is pretty mid at that taco shop. I know a better spot."'
+  - '"In a clutch move, the team scored for the win in the final seconds of the game."'
+  - '"That player is OP. When they''re in the game, you''ve already lost."'
+  - '"Nice game, bro. W."'
+  - '"Your sneakers are really dank."'
+  - '"You look snatched in that dress!"'
+  - '"Six inch heels might be a little extra for a Thanksgiving dinner."'
+  - '"Michael Jorden was the GOAT of basketball. Prove me wrong."'
+  - '"Bryce has so much rizz. He got a girl''s phone number at the movies while the
+    movie was playing."'
+  - '"Keep this on the down-low, but I''m thinking about quitting this job."'
+  - '"Did she actually say that out loud to him?"
+
+    "Deadass."'
+  - '"Bryan, you need to start your homework now."
+
+    "Say less, mom. I got it."'
+  - '"Are you going to the beach this weekend?"
+
+    "Nah. I already got plans with
+    Kate."'
+  - '"I love you, but sometimes you''re such a dumbass."'
+  - '"If I hear another stupid-ass thing come out of your mouth, I will scream."'
 --- !u!1 &1259795342
 GameObject:
   m_ObjectHideFlags: 0
@@ -7224,8 +7415,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7496,7 +7687,7 @@ MonoBehaviour:
     "_ _ as long as you pay."'
   - '"_ about the party, it got canceled due to the bad weather."'
   - '"Dude your car is _, I wish I had a car like that."'
-  - "\"Don\u2019t worry, youre the best player out there. You have this _ _ _.\""
+  - "\"Don\u2019t worry, you're the best player out there. You have this _ _ _.\""
   - '"I never see Abigal eat meat, is she a vegetarian?"
 
     "Nah she does, _ _
@@ -7512,16 +7703,16 @@ MonoBehaviour:
   - '"They got back together?_ _ _ right now."'
   - '"Sorry I was late, I lost track of time."
 
-    "Its _ _, I was a little late
+    "It''s _ _, I was a little late
     too."'
-  - '"I really hope we can hang out tonight, if you cant make it its _ _ _ though."'
+  - '"I really hope we can hang out tonight, if you can''t make it it''s _ _ _ though."'
   - '"I''ll get it done by the deadline, _ _."'
   - "\"He didn\u2019t have to _ me _ like that with that guitar solo.\""
   - '"He was always here to _ _ _ me when no one else would."'
   - '"I _ _ _ on you, you''re so cute."'
   - '"My dream is to be a _ worker in some high-end company."'
   - '"I wish us _ workers had it easier."'
-  - "\"I didn\u2019t do anything wrong, shes just being _ because of what I said
+  - "\"I didn\u2019t do anything wrong, she's just being _ because of what I said
     yesterday.\""
   - '"He was _ cheating on her."'
   - '"I love the new dress, you look like the _."'
@@ -7533,28 +7724,28 @@ MonoBehaviour:
   - '"I''m not gonna _ _ until he starts using his manners."'
   - '"Would you be _ _ if we came over today."'
   - '"I wanna _ _ this weekend, are you avaliable?"'
-  - '"Dude that rollecoaster was so scary, when it when upsidedown, I was _ _ _."'
+  - '"Dude that rollecoaster was so scary, when it when upside-down, I was _ _ _."'
   - "\"I'm happy you got an A on the math test, but you don\u2019t have to _ _ _
     _ _.\""
   - '"Is there any chance I can make it to school on time today."
 
-    "Its way too
-    late now, _ _ _ _."'
-  - '"I cant wait for your party this summer, we''re going to _ _ _."'
+    "It''s way
+    too late now, _ _ _ _."'
+  - '"I can''t wait for your party this summer, we''re going to _ _ _."'
   - '"Would you like to grab lunch with me this weekend."
 
     "_ _, what time?"'
   - '"_ _, I have been ever since my pet fish died."'
   - "\"Don\u2019t listen to him, hes a scammer, he likes to _ _ people for fun.\""
-  - '"Its time to go."
+  - '"It''s time to go."
 
     "Can I _ _."'
   - '"You always _ _ to her, what about me?"'
   - '"She wanted the last slice, but I already _ _ _ it."'
   - '"He''s _ _, its his first day on the job."'
   - '"Everytime she messes up, she tries to _ _ _ to me, I''m sick of it."'
-  - '"Lets _ _ for dinner tonight."'
-  - '"Its time to _ _ _, does anyone else want to come?"'
+  - '"Let''s _ _ for dinner tonight."'
+  - '"It''s time to _ _ _, does anyone else want to come?"'
   - '"Can we _ _ the party? I still have plans tonight."'
   - '"Are you sure you can handle this?"
 
@@ -7565,31 +7756,32 @@ MonoBehaviour:
 
     "Sure, I''m _ _."'
   - '"I pulled an _ to finish her favorite show."'
-  - '"She looks so pretty, she definetely had a _ _."'
+  - '"She looks so pretty, she definitely had a _ _."'
   - '"Whenever he starts talking, I just _ _ what he has to say."'
   - '"I''m gonna _ this test."'
   - '"You''re going to _ this job interview, I promise."'
   - "\"He's always trying to _ _ me, I don\u2019t know why.\""
-  - '"I _ _ constantly, I cant believe they havent fired me yet."'
+  - '"I _ _ constantly, I can''t believe they haven''t fired me yet."'
   - '"You look exhuasted, we have to get _ _ for this concert tonight."'
   - '"I just found out what happened to Abby."
 
-    "Really?_ _ _ she wont tell me."'
+    "Really?_ _ _ she won''t tell
+    me."'
   - '"Did you _ just do that?"'
   - '"I _ _ with her, she was talking about me behind my back."'
-  - '"I wanna go fishing this weekend, _ _ _"'
+  - '"I want to go fishing this weekend, _ _ _"'
   - '"_ _ _ _ skydive with me? It could be a lot of fun."'
   - '"I''m _ _ leave the house, Ive been inside all day."'
-  - "\"Don\u2019t give her any chocoloate, last time I did, she threw a _ _ when
-    she ran out.\""
+  - "\"Don\u2019t give her any chocolate, last time I did, she threw a _ _ when she
+    ran out.\""
   - '"I''m running short on _, could you pay instead?"'
   - '"Time for work, hopefully I''ll make more _ than last week."'
   - '"I''m so tired, as soon as I get home, I''m gonna _."'
   - '"_ _, things could be worse after all."'
-  - '"I''m gonna score tonight with her, I know it."'
-  - '"Theres only two more assignments left, as long as I can _ these, my grade will
-    be fine."'
-  - '"I''m sorry to _ on you but I wont be able to make it to the BBQ."'
+  - '"I''m gonna _ tonight with her, I know it. She really likes me."'
+  - '"There''s only two more quizzes left, as long as I can _ for these, my grade
+    will be fine."'
+  - '"I''m sorry to _ on you but I won''t be able to make it to the BBQ."'
   - '"She''s so mean, we should _ her for somebody else."'
   - '"I _ my mom''s favorite vase."'
   - '"I heard he got _ by the police."'
@@ -7606,13 +7798,13 @@ MonoBehaviour:
     "_ _ _, so are
     mine."'
   - '"Did you see him score that goal? That was _."'
-  - '"Dude shes like supermodel _."'
+  - '"Dude she''s like supermodel _."'
   - '"He kept using these really _ pickup lines, but I thought they were cute."'
-  - "\"She keeps acting strange, I don\u2019t know why shes being so _.\""
+  - "\"She keeps acting strange, I don\u2019t know why she's being so _.\""
   - '"He cheated on you, you need to _ him."'
   - "\"I want to _ _ with her, she doesn\u2019t like pizza.\""
-  - '"Name one party you havent seen her at, shes the biggest _ _ at our school."'
-  - '"Dude I swear hes a math _, Ive never seen someone solve problems that fast
+  - '"Name one party you haven''t seen her at, she''s the biggest _ _ at our school."'
+  - '"Dude I swear hes a math _, I''ve never seen someone solve problems that fast
     before."'
   - "\"Go ask her out, don\u2019t be a _.\""
   - '"Dude that _ is so hot."'
@@ -7620,10 +7812,10 @@ MonoBehaviour:
 
     "_ _ as long as I can bring
     my friend."'
-  - '"Your party was a _! Everyone had so much fun."'
+  - '"Your party was _ _! Everyone had so much fun."'
   - '"I''m totally gonna _ _ this weekend and eat whatever I want, I''m under so
     much stress."'
-  - '"She so rich and _."'
+  - '"She''s so rich and _."'
   - '"_ _ dude, fighting wont solve anything."'
   - "\"I didn\u2019t mean to _ _ _ like that, it was an accident.\""
   paragraphY:
@@ -7640,7 +7832,7 @@ MonoBehaviour:
   - '"I got to start hitting the gym, I want to be super _."'
   - '"I just got back from the mall, rate the new _."'
   - '"I''m _ hit the gym, you tryna come?"'
-  - '"Wanna hang ourt this weekend?"
+  - '"Wanna hang out this weekend?"
 
     "_."'
   - "\"Ive never seen a car like that before, that\u2019s _.\""
@@ -7648,7 +7840,7 @@ MonoBehaviour:
   - "\"Sorry I couldn\u2019t make it this weekend, my mom is sick.\"\n\"You're all
     _, family comes first.\""
   - '"I''m _, I wouldve never expected her to do that."'
-  - '"He keeps acting _, I know hes up to something."'
+  - '"He keeps acting _, I know he''s up to something."'
   - '"Check out the new _."'
   - '"I finally finished my hair and make up, I look so _ _."'
   - '"After he cheated, I had to _ him on everything."'
@@ -7657,23 +7849,23 @@ MonoBehaviour:
     "_ girl you already know it."'
   - '"You have to be joking."
 
-    "_ _ its true."'
+    "_ _ it''s true."'
   - '"That dance move was _ _, you looked just like a professional."'
   - '"You''re _ weird for what you just said."'
   - "\"That\u2019s _ funny, how did that happen?.\""
-  - '"This album _, its my new favorite."'
+  - '"This album _, it''s my new favorite."'
   - '"Everything at this resturant is _, especially the lasagna."'
   - '"You have so many _."'
   - '"I cant believe that drink is her favorite, It''s so _."'
   - '"He came in _ that round, I though we were gonna lose."'
   - '"That car build is so _, nothing can beat it."'
-  - '"GG _."'
+  - '"Good game. _."'
   - '"Did you see the pictures I posted? The food was _."'
   - '"She looks _ for prom this Friday, her hair and makeup is beautiful."'
   - '"Why is she being so _, I told her I was sorry."'
   - "\"That\u2019s my favorite basketball player, he's the _.\""
   - '"She defintely likes you, _ her up."'
-  - "\"Theres a party this weekend, but don\u2019t tell anyone, I want to keep it
+  - "\"There's a party this weekend, but don\u2019t tell anyone, I want to keep it
     on the _ _.\""
   - '"Did you _ just talk to me like that."'
   - '"I need gas money."
